@@ -80,6 +80,6 @@
 }
 
 .title {
-    color: cyan;
+    color: rgb(0, 255, 255);
     text-shadow: 1px 1px 1.5px rgba(255, 255, 255, 0.3), -1px 1px 1.5px rgba(255, 255, 255, 0.3), -1px -1px 1.5px rgba(255, 255, 255, 0.3), 1px -1px 1.5px rgba(255, 255, 255, 0.3), 1px 0 1.5px rgba(255, 255, 255, 0.3), 0 1px 1.5px rgba(255, 255, 255, 0.3), -1px 0 1.5px rgba(255, 255, 255, 0.3), 0 -1px 1.5px rgba(255, 255, 255, 0.3);
 }

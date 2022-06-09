@@ -1,0 +1,156 @@
+.top-nav,
+.top-nav-link-list,
+.top-nav-social-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.top-nav {
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    position: relative;
+    box-shadow: 0 5px 5px cyan;
+    z-index: 1;
+}
+
+.top-nav-link-list,
+.top-nav-social-list {
+    gap: 10px;
+}
+
+.top-nav-social-list {
+    margin-left: 50px;
+}
+
+.top-nav-link-list {
+    margin-left: auto;
+}
+
+.top-nav-link-list li {
+    border: 2px solid cyan;
+    padding: 2px;
+    border-radius: 20px;
+    width: 75px;
+    text-align: center;
+    color: cyan;
+}
+
+.mobile-nav-list li {
+    color: cyan;
+}
+
+.top-nav-link-list li:hover,
+.top-nav-link-list li.active,
+.mobile-nav-list li:hover,
+.mobile-nav-list li.active {
+    cursor: pointer;
+    background-color: cyan;
+    color: black;
+}
+
+/* .top-nav-social-list {
+    margin-right: auto;
+} */
+
+.logo {
+    max-width: 50px;
+    height: auto;
+}
+
+.social-link {
+    font-size: 24px;
+    background-color: black;
+    display: flex;
+    color: cyan;
+    border-radius: 50%;
+    border: 2px solid cyan;
+}
+
+.social-link:hover {
+    color: black;
+    background-color: #00ffff;
+    cursor: pointer;
+}
+
+.hamburger-menu-btn {
+    display: none;
+    color: cyan;
+    font-size: 48px;
+    justify-self: center;
+}
+
+.hamburger-menu-btn:hover {
+    cursor: pointer;
+}
+
+.mobile-nav {
+    display: none;
+    position: absolute;
+    background-color: black;
+    color: cyan;
+    width: 100%;
+}
+
+.mobile-nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 0;
+}
+
+.mobile-nav-list li {
+    width: 100%;
+    padding: 10px 0 10px 25px;
+}
+
+.mobile-nav-list li:hover {
+    cursor: pointer;
+    background-color: cyan;
+    color: black
+}
+
+@media screen and (max-width: 480px) {
+
+    .top-nav-link-list,
+    .top-nav-social-list {
+        display: none;
+    }
+
+    .hamburger-menu-btn {
+        display: block;
+        order: -1;
+    }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .top-nav-link-list {
+        display: none;
+    }
+
+    .top-nav-social-list {
+        padding: 0;
+        order: 3;
+        margin: 0;
+    }
+
+    .logo {
+        order: 2;
+        /* display: none; */
+    }
+
+    .hamburger-menu-btn {
+        display: block;
+        order: -1;
+    }
+}
