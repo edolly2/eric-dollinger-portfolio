@@ -10,7 +10,7 @@ import React from "react";
 import { useState } from "react";
 
 const ResponsiveTopNav = (props) => {
-  const links = ["link1", "link2", "link3", "link4", "link5"];
+  const links = ["Home", "About", "Portfolio", "Projects", "Contact"];
   const [active, setActive] = useState(null);
   const [mobileMenuActive, setMobileMenuActive] = useState(false);
   return (
@@ -28,7 +28,7 @@ const ResponsiveTopNav = (props) => {
         </div>
         <ul className="top-nav-link-list">
           {links.map((link) => (
-            <Link className="nav-link" to={`/${link}`}>
+            <Link className="nav-link" to={`/${link.toLowerCase()}`}>
               <li
                 className={active === link && "active"}
                 onClick={() => setActive(link)}
@@ -59,7 +59,7 @@ const ResponsiveTopNav = (props) => {
       >
         <ul className="mobile-nav-list">
           {links.map((link) => (
-            <Link className="nav-link" to={`/${link}`}>
+            <Link className="nav-link" to={`/${link.toLowerCase()}`}>
               <li
                 className={active === link && "active"}
                 onClick={() => {
