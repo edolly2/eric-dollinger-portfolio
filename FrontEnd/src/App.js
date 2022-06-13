@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 import LoadingPage from "./_pages/LoadingPage";
 import ResponsiveTopNav from "./_components/ResponsiveTopNav";
+import Stars from "./_components/Stars";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -15,6 +16,9 @@ function App() {
       {loading === false ? (
         <div className="App">
           <ResponsiveTopNav />
+          <main>
+            <Stars />
+          </main>
         </div>
       ) : (
         <LoadingPage />

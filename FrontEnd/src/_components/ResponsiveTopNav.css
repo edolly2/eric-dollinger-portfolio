@@ -97,6 +97,7 @@
     background-color: black;
     color: cyan;
     width: 100%;
+    z-index: 1;
 }
 
 .mobile-nav-list {
