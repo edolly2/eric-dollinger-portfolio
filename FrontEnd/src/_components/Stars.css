@@ -12,12 +12,12 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100vh;
+    right: 0;
+    bottom: 0;
+    /* width: 100%; */
+    /* height: 100vh; */
+    z-index: 1;
     animation: animate-bg 50s linear infinite;
-    background-image: url("../_assets/space-geometry-stars-cyan-wallpaper-preview.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 @keyframes animate-bg {

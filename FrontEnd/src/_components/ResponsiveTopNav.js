@@ -10,14 +10,16 @@ import React from "react";
 import { useState } from "react";
 
 const ResponsiveTopNav = (props) => {
-  const links = ["Home", "About", "Portfolio", "Projects", "Contact"];
+  const links = ["", "About", "Portfolio", "Projects", "Contact", "Blog"];
   const [active, setActive] = useState(null);
   const [mobileMenuActive, setMobileMenuActive] = useState(false);
   return (
-    <div>
+    <div className="navigation-container">
       <nav className="top-nav">
         <div className="top-nav-logo">
-          <img className="logo" src={Logo} alt="#" />
+          <Link to="home" onClick={() => setActive("Home")}>
+            <img className="logo" src={Logo} alt="#" />
+          </Link>
         </div>
         <div className="hamburger-menu-btn">
           <CgMenuGridO
@@ -31,9 +33,12 @@ const ResponsiveTopNav = (props) => {
             <Link className="nav-link" to={`/${link.toLowerCase()}`}>
               <li
                 className={active === link && "active"}
-                onClick={() => setActive(link)}
+                onClick={() => {
+                  setActive(null);
+                  setActive(link);
+                }}
               >
-                {link}
+                {!link[0] ? "Home" : link}
               </li>
             </Link>
           ))}
@@ -67,7 +72,7 @@ const ResponsiveTopNav = (props) => {
                   setMobileMenuActive(false);
                 }}
               >
-                {link}
+                {!link[0] ? "Home" : link}
               </li>
             </Link>
           ))}

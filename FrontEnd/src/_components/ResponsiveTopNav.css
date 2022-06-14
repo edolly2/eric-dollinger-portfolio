@@ -17,6 +17,7 @@
     justify-content: space-between;
     background-color: black;
     position: relative;
+    font-size: 1.5rem;
     box-shadow: 0 5px 5px cyan;
     z-index: 1;
 }
@@ -41,6 +42,10 @@
     width: 75px;
     text-align: center;
     color: cyan;
+}
+
+.mobile-nav {
+    box-shadow: 0 5px 5px cyan;
 }
 
 .mobile-nav-list li {
@@ -92,12 +97,14 @@
 }
 
 .mobile-nav {
+    margin-top: -1px;
     display: none;
     position: absolute;
     background-color: black;
     color: cyan;
     width: 100%;
     z-index: 1;
+    padding: 10px 0;
 }
 
 .mobile-nav-list {
