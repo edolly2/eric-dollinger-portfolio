@@ -12,7 +12,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
-  background-color: black;
+  /* background-color: black; */
+  /* background-image: url("./_assets/space-geometry-stars-cyan-wallpaper-preview.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; */
 }
 
 code {
@@ -29,12 +32,21 @@ code {
 }
 
 .page-content {
-  background-image: url("./_assets/space-geometry-stars-cyan-wallpaper-preview.jpg");
+  /* background-image: url("./_assets/stars_bg.jpeg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover;  */
+  /* background: linear-gradient(125deg, #00103a 0%, #3e5f77 100%); */
+  background: linear-gradient(125deg, black 0%, rgb(0, 10, 10) 25%, rgb(0, 22, 22) 50%, rgb(0, 43, 43) 100%);
+
 }
 
 .navigation-container {
+  position: relative;
+  /* z-index: 2; */
+}
+
+.page {
+  height: 100vh;
   position: relative;
   z-index: 2;
 }

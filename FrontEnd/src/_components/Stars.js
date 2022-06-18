@@ -1,15 +1,16 @@
 import "./Stars.css";
 const Stars = () => {
   return (
-    <div className="stars-container">
-      <section>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </section>
+    <div className="content">
+      <div className="stars-container">
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+      </div>
     </div>
   );
 };
