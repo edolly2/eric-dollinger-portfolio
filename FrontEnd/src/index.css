@@ -11,7 +11,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow: hidden;
+  overflow-x: hidden;
   /* background-color: black; */
   /* background-image: url("./_assets/space-geometry-stars-cyan-wallpaper-preview.jpg");
   background-repeat: no-repeat;
